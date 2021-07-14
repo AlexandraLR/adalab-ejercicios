@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./Styles/stylereset.css" />
+    <!-- vamos a resetear el estilo con una hoja de reset, en la que podemos usar * para seleccionar TODA la página-->
+    <link rel="stylesheet" href="./Styles/stylenew.css" />
+    <!-- se le añade una nueva hoja de estilos-->
+  </head>
+  <body>
+    <section>
+      <header>
+        <div>
+          <!--Div se usa para agrupar también, pero es mejor section-->
+          <h1 class="title">Noticias</h1>
+          <!-- añado la clase para hacer más sencillo aplicar los estilos, con uno de identificador se haría más complicado renombrar cada atributo con un id-->
+          <h2>las noticias de última hora</h2>
+        </div>
+        <nav>
+          <ul>
+            <!-- a para meter enlace, href para la referencia a la web, target para que la abra en blanco-->
+            <li><a href="https://adalab.es" target="_blank">Adalab</a></li>
+            <li><a href="./contacto.html">Contacto</a></li>
+            <li><a href="#footerPagina">Pie de página</a></li>
+            <!-- Identificador en footer para llamarlo en el menú-->
+          </ul>
+        </nav>
+      </header>
+    </section>
+    <section>
+      <!-- Section se usa para dividir una página en secciones-->
+      <aside>
+        <!-- Se usa ASIDE para publicidad-->
+        PUBLICIDAD.
+      </aside>
+    </section>
+
+    <main>
+      <article>
+        <!-- Para meter varios artículos se usa "articles" y se secciona en párrafos por tema de estructura semántica-->
+        <h2>noticia</h2>
+        <p>
+          - Adalab contacto footer noticia noticia 1 Lorem ipsum dolor sit amet,
+          consectetur adipisicing elit. Vel veniam explicabo, quis officia autem
+          sequi sint repellat harum molestiae nam et id alias repudiandae
+          dolorum, velit laudantium voluptates nostrum architecto.
+        </p>
+      </article>
+    </main>
+
+    <footer id="footerPagina">
+      <p><strong>Adalab</strong> &copy; todos los derechos reservados</p>
+      <!-- la etiqueta &copy; pone la C de copyright-->
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,15 @@
+.div {
+  height: 100px;
+  width: 100px;
+  display: inline;
+  padding: 10px;
+  border: 5px;
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: scroll;
+}
+.img {
+  height: 100px;
+  width: 100px;
+}
