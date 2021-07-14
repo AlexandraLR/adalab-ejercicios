@@ -1,0 +1,25 @@
+.container {
+  display: flex;
+  width: 200px;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.item {
+  box-sizing: border-box;
+  text-align: center;
+  justify-content: left;
+  height: 200px;
+  width: 100px;
+  background-color: rgb(221, 199, 214);
+  font-size: 15px;
+  order: 1;
+  flex-grow: 1;
+  flex: 1;
+}
+.item-x {
+  flex: 7;
+
+  order: -2;
+  flex-grow: 4;
+}

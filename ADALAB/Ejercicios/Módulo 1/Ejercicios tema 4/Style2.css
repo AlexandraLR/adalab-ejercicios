@@ -1,0 +1,20 @@
+.container {
+  display: flex;
+  height: 25px;
+  width: 1000px;
+  flex-direction: row;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.item {
+  box-sizing: border-box;
+  height: 100%;
+  width: 100px;
+  margin-top: 20px;
+  vertical-align: middle;
+  text-align: center;
+  background-color: rgb(221, 199, 214);
+  font-size: 15px;
+  flex-grow: 3;
+}
