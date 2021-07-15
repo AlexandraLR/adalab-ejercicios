@@ -1,0 +1,22 @@
+/* siempre va primero el conmtainer, de más grande a más pequeño*/
+.container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  border: solid 5px black;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  /*para el eje principal es JUSTIFY, para el vertical es ALIGN*/
+}
+
+.box {
+  border: solid 3px red;
+  width: 100px;
+  padding: 2px;
+  margin: 2px;
+}
+
+.order {
+  order: 1;
+}

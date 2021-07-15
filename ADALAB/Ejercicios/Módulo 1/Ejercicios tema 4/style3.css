@@ -4,7 +4,6 @@
   flex-direction: row;
   flex-wrap: wrap;
 }
-
 .item {
   box-sizing: border-box;
   text-align: center;
@@ -18,8 +17,7 @@
   flex: 1;
 }
 .item-x {
-  flex: 7;
-
+  width: 200px;
   order: -2;
   flex-grow: 4;
 }

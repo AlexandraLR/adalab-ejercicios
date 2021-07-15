@@ -1,0 +1,26 @@
+body {
+  margin: 20px;
+}
+
+.mama {
+  width: 100vw;
+  padding: 50px;
+  border: solid 10px purple;
+}
+
+.box {
+  border: solid 15px black;
+  width: 50%;
+}
+
+.title {
+  font-size: 45px;
+  width: 50%;
+  /* para que ocupe el 50% del contenedor padre y se ajuste a ese 50% */
+  max-width: 500px;
+  /* para que no se pase del 500px nunca*/
+}
+.image {
+  width: 25%;
+  /* dependiendo de dónde esté metido, depende el tamaño al ser un porcentaje. Siempre sobre su contenedor madre */
+}
