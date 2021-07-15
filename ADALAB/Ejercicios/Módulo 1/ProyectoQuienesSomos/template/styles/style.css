@@ -1,0 +1,50 @@
+:root {
+  --font-size: 16px;
+  --font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 500px;
+  color: white;
+  margin: auto;
+  font-size: var(--font-size)
+  font-family: var(--font-family);
+}
+
+.container2 {
+  display: block;
+  width: 500px;
+}
+
+.nombreequipo {
+  height: 60px;
+  text-align: center;
+  background-color: rgb(59, 150, 107);
+  flex-grow: 2;
+  width: 500px;
+}
+
+.textomenu {
+  height: 45px;
+  color: white;
+  background-color: lightseagreen;
+  text-align: center;
+  flex-grow: 1;
+  width: 500px;
+}
+
+.imagen {
+  width: 500px;
+  align-content: center;
+}
+
+.box2 {
+  margin: 15px;
+  padding: 15px;
+  color: black;
+  background-color: white;
+  align-items: center;
+}
