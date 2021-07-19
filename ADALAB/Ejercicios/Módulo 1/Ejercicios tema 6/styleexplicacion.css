@@ -1,0 +1,19 @@
+.container {
+  background-color: blue;
+}
+
+/*mobile*/
+
+/*tablets*/
+@media all and (min-width: 768px) {
+  .container {
+    background-color: red;
+  }
+}
+
+/* desktop*/
+@media all and (min-width: 1200px) {
+  .container {
+    background-color: green;
+  }
+}
