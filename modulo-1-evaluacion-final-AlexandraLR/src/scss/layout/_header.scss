@@ -1,0 +1,32 @@
+.menu {
+  position: absolute;
+  display: fixed;
+  width: 44px;
+  height: 44px;
+  padding: 15px 14px;
+  background-color: $color-cerulean;
+}
+.container-hero {
+  background-image: url("/modulo-1-evaluacion-final-AlexandraLR/src/images/cover.jpg");
+  background-size: cover;
+  background-position: center;
+
+  // TABLET
+  @media all and (min-width: 768px) {
+    min-width: 768px;
+    max-height: 768px;
+  }
+  // DESKTOP
+  @media all and (min-width: 1280px) {
+    min-width: 1280px;
+    max-height: 768px;
+  }
+}
+
+.scrolldown {
+  width: 20px;
+  height: 11.7px;
+  padding: 18px 12px 15.3px 13px;
+  border-radius: 50%;
+  background-color: $color-white;
+}
