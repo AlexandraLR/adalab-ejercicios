@@ -6,8 +6,9 @@ import CharacterItem from './CharacterItem';
 
 function App() {
   const [data, setData] = useState([]);
-  // const [searchName, setSearchName] = useState('');
-  // const [searchGender, setSearchGender] = useState('all');
+  const [searchName, setSearchName] = useState('');
+  const [searchStatus, setSearchStatus] = useState('all');
+
 
   useEffect(() => {
     getCharactersFromApi().then(initialData => {
@@ -16,7 +17,13 @@ function App() {
     });
   }, []);
 
-
+  const handleChangeSearchName = (ev) => {
+    setSearchName(ev.currentTarget.value);
+  }
+  const handleChangeSearchStatus = (ev) => {
+    setSearchStatus(ev.currentTarget.value);
+  }
+  
 
   return (
     <>
@@ -29,16 +36,21 @@ function App() {
             type="text"
             name="search"
             id="search"
-            placeholder="Encuentra a tu personaje"
+          placeholder="Encuentra a tu personaje"
+          value={searchName}
+          onChange={handleChangeSearchName}
         />
         {/* FILTRO */}
-        {/* <select className="select__clubs">
-          <option value="all" selected>Todos</option>
-          <option value="onWeekdays">los que abren entre semana</option>
-          <option value="onWeekends">los que abren el fin de semana</option>
-        </select> */}
+        <label className='filter__species' htmlFor='species'>Busca por status</label>
+        <select className="select__filter" value={searchStatus}
+          onChange={handleChangeSearchStatus}>
+        <option value="all">Todos</option>
+        <option>Vivo</option>
+        <option>Muerto</option>
+        <option>Desconocido</option>
+        </select>
         {/* Cards */}
-        <CharacterList data={data}/>
+        <CharacterList data={data} CharacterItem={CharacterItem}/>
       </div>
     </>
   );

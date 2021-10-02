@@ -9,6 +9,7 @@ function getCharactersFromApi() {
         name: data.name,
         photo: data.image,
         species: data.species,
+        status: data.status,
       };
     })
 
