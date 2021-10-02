@@ -1,16 +1,14 @@
 function CharacterItem(props) {
     console.log('Character Item', props);
     return (
-        <a href=''>
+        <>
         <img className='card__img'
-                src=''
+                src={props.cardData.photo}
                 alt=''
                 title='' />
-        <h4 className='card__title'>Morty</h4>
-        <p className='card__name'></p>
-        <p className='card__species'></p>             
-    </a>
-
+        <h4 className='card__name'>{props.cardData.name}</h4>
+        <p className='card__species'>{props.cardData.species}</p>
+        </>
     );
 }
 

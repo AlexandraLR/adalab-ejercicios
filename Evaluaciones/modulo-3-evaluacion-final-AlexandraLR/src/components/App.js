@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react';
 import getCharactersFromApi from '../services/RickAndMortyApi';
-// import CharacterDetail from './CharacterDetail';
 import CharacterList from './CharacterList';
 import CharacterItem from './CharacterItem';
 // import Filters from './Filters';
