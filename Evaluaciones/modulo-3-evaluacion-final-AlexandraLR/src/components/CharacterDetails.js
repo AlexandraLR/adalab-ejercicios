@@ -1,6 +1,11 @@
+import { Link } from "react-router-dom";
+
 function CharacterDetails(props) {
   return (
     <section>
+      <Link to="/">
+        <button>Volver</button>
+      </Link>
       <img
         className="card__img"
         src={props.user.image}
