@@ -24,6 +24,10 @@ function App() {
     setSearchStatus(ev.currentTarget.value);
   }
   
+  const filteredData = data
+    .filter((data) => data.name.toLocaleLowerCase().includes(searchName.toLocaleLowerCase()))
+    .filter ((data) => searchStatus === 'all' || data.status === searchStatus
+  );
 
   return (
     <>
@@ -45,12 +49,12 @@ function App() {
         <select className="select__filter" value={searchStatus}
           onChange={handleChangeSearchStatus}>
         <option value="all">Todos</option>
-        <option>Vivo</option>
-        <option>Muerto</option>
-        <option>Desconocido</option>
+        <option value="Alive">Vivo</option>
+        <option value="Dead">Muerto</option>
+        <option value="unknown">Desconocido</option>
         </select>
         {/* Cards */}
-        <CharacterList data={data} CharacterItem={CharacterItem}/>
+        <CharacterList data={filteredData} CharacterItem={CharacterItem} />
       </div>
     </>
   );
