@@ -11,9 +11,9 @@ function CharacterDetails(props) {
       <ul>
         <li>Especie: {props.user.species}</li>
         <li>Status: {props.user.status} </li>
-        <li>Origen: {props.user.origin.name}</li>
-        <li>Ubicación: {props.user.location.name}</li>
-        <li>Episodio: {props.user.episode.length}</li>
+        <li>Origen: {props.user.origin}</li>
+        <li>Ubicación: {props.user.location}</li>
+        <li>Episodio: {props.user.episode}</li>
       </ul>
     </section>
   );

@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Route, Switch } from "react-router-dom";
+import { Route, Switch, useRouteMatch } from "react-router-dom";
 import getCharactersFromApi from "../services/RickAndMortyApi";
 import CharacterList from "./CharacterList";
 import CharacterItem from "./CharacterItem";
@@ -25,6 +25,13 @@ function App() {
     setSearchStatus(ev.currentTarget.value);
   };
 
+  const routeData = useRouteMatch("/user/:id");
+
+  const characterId = routeData !== null ? routeData.params.id : "";
+  const selectedCharacter = data.find(
+    (data) => data.id === parseInt(characterId)
+  );
+
   const filteredData = data
     .filter((data) =>
       data.name.toLocaleLowerCase().includes(searchName.toLocaleLowerCase())
@@ -39,19 +46,7 @@ function App() {
       <Switch>
         {/* RUTA DE LAS TARJETAS */}
         <Route path="/user/:id">
-          <CharacterDetails
-            user={{
-              episode: 31,
-              id: 1,
-              image:
-                "https://raw.githubusercontent.com/Adalab/rick-y-morty/master/assets/img/1.jpeg",
-              location: "Earth (Replacement Dimension)",
-              name: "Rick Sanchez",
-              origin: "Earth (C-137)",
-              species: "Human",
-              status: "Alive",
-            }}
-          />
+          <CharacterDetails data={filteredData} user={selectedCharacter} />
         </Route>
         {/* RUTA DE PÁGINA PRINCIPAL */}
         <Route exact path="/">
