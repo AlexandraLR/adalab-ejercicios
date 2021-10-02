@@ -1,0 +1,23 @@
+{
+  "folders": [
+	{
+		"name": "ejercicios-en-clase-n",
+		"path": "..\\..\\..\\..\\ejercicios-en-clase-n"
+	},
+	{
+		"name": "adalab-web-starter-kit-master",
+		"path": "..\\..\\..\\..\\..\\adalab-web-starter-kit-master"
+	},
+	{
+		"name": "ADALAB",
+		"path": "..\\..\\.."
+	},
+	{
+		"name": "clonados",
+		"path": "..\\..\\..\\..\\..\\clonados"
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "ADALAB"
+  }
+}
