@@ -60,6 +60,10 @@ function App() {
             </section>
           </div>
         </Route>
+
+        <Route>
+          <section>Ups, página errónea, paz entre los mundos!</section>
+        </Route>
       </Switch>
     </>
   );
