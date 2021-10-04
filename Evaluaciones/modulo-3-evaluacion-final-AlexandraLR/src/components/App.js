@@ -5,6 +5,7 @@ import CharacterList from "./CharacterList";
 import CharacterItem from "./CharacterItem";
 import CharacterDetails from "./CharacterDetails";
 import Filters from "./Filters";
+import "../stylesheets/main.scss";
 
 function App() {
   const [data, setData] = useState([]);
@@ -19,9 +20,11 @@ function App() {
   }, [searchName]);
 
   const handleChangeSearchName = (ev) => {
+    ev.preventDefault();
     setSearchName(ev.currentTarget.value);
   };
   const handleChangeSearchStatus = (ev) => {
+    ev.preventDefault();
     setSearchStatus(ev.currentTarget.value);
   };
 
@@ -39,8 +42,14 @@ function App() {
     .filter((data) => searchStatus === "all" || data.status === searchStatus);
 
   return (
-    <>
+    <div className="allpage">
       <h1 className="title--big">Rick and Morty</h1>
+      <img
+        className="title_img"
+        src=""
+        alt="RickANDMortypedia"
+        title="RickANDMortypedia"
+      />
       {/* IMAGEN DE RICK Y MORTY */}
 
       <Switch>
@@ -74,7 +83,7 @@ function App() {
           <section>Ups, página errónea, paz entre los mundos!</section>
         </Route>
       </Switch>
-    </>
+    </div>
   );
 }
 
