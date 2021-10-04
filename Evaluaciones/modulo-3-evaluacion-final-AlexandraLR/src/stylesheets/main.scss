@@ -1,3 +1,12 @@
+$backgroundcolorcontainers: #0aa7a7;
+
+.body {
+  width: 100%;
+}
+.html {
+  width: 100%;
+}
+
 * {
   margin: 10px;
   padding: 0;
@@ -9,7 +18,7 @@
 }
 
 #root {
-  color: white;
+  color: #60ef21;
   box-sizing: border-box;
 }
 
@@ -23,9 +32,9 @@
   align-items: center;
   align-content: center;
 }
-
+// Tarjetas pantalla landing
 .container__card {
-  background-color: #42b4ca;
+  background-color: $backgroundcolorcontainers;
   padding-left: 15px;
   padding-top: 15px;
   padding-right: 18px;
@@ -35,19 +44,20 @@
     0px 5px 25px rgba(141, 207, 115, 0.8);
 
   .card__name {
-    background-color: #42b4ca;
+    background-color: $backgroundcolorcontainers;
     font-size: 20px;
     font-weight: 800;
   }
   .card__species {
-    background-color: #42b4ca;
+    background-color: $backgroundcolorcontainers;
     font-weight: 300;
     font-size: 18px;
   }
 }
 
+// Tarjeta detalle
 .search__character {
-  border: 2px rgba(0, 255, 255, 0.342) solid;
+  border: 2px $backgroundcolorcontainers solid;
   height: 30px;
   width: 200px;
   font-size: 18px;
@@ -57,21 +67,125 @@
 
 .container__details {
   display: flex;
-  background-color: #42b4ca;
+  background-color: $backgroundcolorcontainers;
   padding-left: 15px;
   padding-top: 15px;
   padding-right: 18px;
   padding-bottom: 18px;
   justify-content: center;
-  box-shadow: 6px 5px 8px rgba(141, 207, 115, 0.8),
+  box-shadow: 6px 5px 8px rgba(141, 207, 114, 0.8),
     0px 5px 25px rgba(141, 207, 115, 0.8);
   .container__button {
-    background-color: #42b4ca;
+    background-color: $backgroundcolorcontainers;
   }
   .card__name {
-    background-color: #42b4ca;
+    background-color: $backgroundcolorcontainers;
   }
   .card__details {
-    background-color: #42b4ca;
+    background-color: $backgroundcolorcontainers;
+  }
+  .container__text--detail {
+    display: flex;
+    flex-direction: column;
+    background-color: $backgroundcolorcontainers;
+  }
+}
+
+// Icons detail
+#human-icon-detail {
+  font-size: 20px;
+  background-color: $backgroundcolorcontainers;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+#alien-icon-detail {
+  font-size: 20px;
+  background-color: $backgroundcolorcontainers;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+#dead-icon-detail {
+  font-size: 20px;
+  background-color: $backgroundcolorcontainers;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+#alive-icon-detail {
+  font-size: 20px;
+  background-color: $backgroundcolorcontainers;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+.footer {
+  margin-top: 35px;
+}
+// Icons Footer
+#human-icon {
+  font-size: 20px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+#alien-icon {
+  font-size: 20px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+#dead-icon {
+  font-size: 20px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+#alive-icon {
+  font-size: 20px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+@media all and (max-width: 768px) {
+  .image_title {
+    width: 760px;
+  }
+  .body {
+    width: 768px;
+  }
+  .cards {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  .footer {
+    width: 750px;
+  }
+}
+
+@media all and (max-width: 360px) {
+  .body {
+    width: 360px;
+    margin-right: 0px;
+    margin-left: 2px;
+  }
+
+  .image_title {
+    width: 320px;
+  }
+  .card__img {
+    width: 200px;
+    height: 200px;
+    align-items: center;
+  }
+  .cards {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+  .container__details {
+    width: 240px;
+    display: flex;
+    flex-direction: column;
+  }
+  .footer {
+    width: 320px;
+  }
+  .html {
+    width: 320px;
   }
 }

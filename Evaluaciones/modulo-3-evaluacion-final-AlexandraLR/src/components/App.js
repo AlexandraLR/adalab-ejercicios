@@ -83,6 +83,36 @@ function App() {
           <section>Ups, página errónea, paz entre los mundos!</section>
         </Route>
       </Switch>
+
+      <footer className="footer">
+        <h4>Leyenda de símbolos</h4>
+        <p>
+          Alive:
+          <span
+            className="iconify"
+            data-icon="lucide:smile"
+            id="alive-icon"
+          ></span>
+          Dead:
+          <span
+            className="iconify"
+            data-icon="cil:face-dead"
+            id="dead-icon"
+          ></span>
+          Human:
+          <span
+            className="iconify"
+            data-icon="raphael:smile"
+            id="human-icon"
+          ></span>
+          Alien:
+          <span
+            class="iconify"
+            data-icon="ri:aliens-fill"
+            id="alien-icon"
+          ></span>
+        </p>
+      </footer>
     </div>
   );
 }
