@@ -62,7 +62,7 @@ $backgroundcolorcontainers: #0aa7a7;
   width: 200px;
   font-size: 18px;
   font-weight: 500;
-  background-color: aliceblue;
+  background-color: #9ddf80;
 }
 
 .container__details {
@@ -75,7 +75,21 @@ $backgroundcolorcontainers: #0aa7a7;
   justify-content: center;
   box-shadow: 6px 5px 8px rgba(141, 207, 114, 0.8),
     0px 5px 25px rgba(141, 207, 115, 0.8);
+
+  .container__button-one {
+    background-color: $backgroundcolorcontainers;
+  }
   .container__button {
+    background-color: $backgroundcolorcontainers;
+  }
+  .button-goback {
+    width: 10px;
+  }
+  .button-details {
+    background-color: $backgroundcolorcontainers;
+    width: 50px;
+  }
+  .button__details {
     background-color: $backgroundcolorcontainers;
   }
   .card__name {

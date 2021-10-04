@@ -50,8 +50,6 @@ function App() {
         src={logo}
         alt="RickAndMortypedia"
       />
-      {/* IMAGEN DE RICK Y MORTY */}
-
       <Switch>
         {/* RUTA DE LAS TARJETAS */}
         <Route path="/user/:id">
@@ -100,11 +98,7 @@ function App() {
             id="dead-icon"
           ></span>
           Human:
-          <span
-            className="iconify"
-            data-icon="raphael:smile"
-            id="human-icon"
-          ></span>
+          <i class="fas fa-user-astronaut" id="human-icon"></i>
           Alien:
           <span
             class="iconify"
