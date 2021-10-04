@@ -13,6 +13,9 @@
   box-sizing: border-box;
 }
 
+.image_title {
+  background-position: center;
+}
 .cards {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -22,21 +25,53 @@
 }
 
 .container__card {
-  background-color: aqua;
+  background-color: #42b4ca;
   padding-left: 15px;
   padding-top: 15px;
   padding-right: 18px;
   padding-bottom: 18px;
   justify-content: center;
+  box-shadow: 6px 5px 8px rgba(141, 207, 115, 0.8),
+    0px 5px 25px rgba(141, 207, 115, 0.8);
 
   .card__name {
-    background-color: aqua;
+    background-color: #42b4ca;
     font-size: 20px;
     font-weight: 800;
   }
   .card__species {
-    background-color: aqua;
+    background-color: #42b4ca;
     font-weight: 300;
     font-size: 18px;
+  }
+}
+
+.search__character {
+  border: 2px rgba(0, 255, 255, 0.342) solid;
+  height: 30px;
+  width: 200px;
+  font-size: 18px;
+  font-weight: 500;
+  background-color: aliceblue;
+}
+
+.container__details {
+  display: flex;
+  background-color: #42b4ca;
+  padding-left: 15px;
+  padding-top: 15px;
+  padding-right: 18px;
+  padding-bottom: 18px;
+  justify-content: center;
+  box-shadow: 6px 5px 8px rgba(141, 207, 115, 0.8),
+    0px 5px 25px rgba(141, 207, 115, 0.8);
+  .container__button {
+    background-color: #42b4ca;
+  }
+  .card__name {
+    background-color: #42b4ca;
+  }
+  .card__details {
+    background-color: #42b4ca;
   }
 }

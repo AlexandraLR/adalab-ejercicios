@@ -6,6 +6,7 @@ import CharacterItem from "./CharacterItem";
 import CharacterDetails from "./CharacterDetails";
 import Filters from "./Filters";
 import "../stylesheets/main.scss";
+import logo from "../images/LetrasRickYMortyConFirmaYPortal(másresplandor) (1) (2).gif";
 
 function App() {
   const [data, setData] = useState([]);
@@ -43,12 +44,11 @@ function App() {
 
   return (
     <div className="allpage">
-      <h1 className="title--big">Rick and Morty</h1>
       <img
-        className="title_img"
-        src=""
-        alt="RickANDMortypedia"
-        title="RickANDMortypedia"
+        class="image_title"
+        title="RickAndMortypedia"
+        src={logo}
+        alt="RickAndMortypedia"
       />
       {/* IMAGEN DE RICK Y MORTY */}
 
